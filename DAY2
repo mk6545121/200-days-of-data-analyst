@@ -1,0 +1,81 @@
+#day 2 of learnig data analyst
+'''Today I'm learning about if else block and elif concept
+   '''#
+   
+   
+#Task1:
+     ## Ask user's marks, print grade based on marks
+marks=int(input("Enter you total marks(number): "))
+if marks>=90:
+    print("Grade A")
+elif marks>=80:
+    print("Grade B")
+elif marks>=50:
+    print("Grade C")
+elif marks>=30:
+    print("Grade D")
+else:
+    print("Fail")
+    
+print("Hope you will do best in next time....")
+
+
+
+
+
+
+
+#Task2:
+#making a program for calculating the discount
+amount=int(input("Enter your amount : "))
+if amount>=10000:
+    discount=amount*0.10
+    #print("You got 10% discount")
+else:
+    discount=amount*0.05
+   # print("You got 5%discount")
+print(f"Your discount☠️{discount}")
+
+
+
+
+
+
+#Task3:
+#Boss Level (DA Use Case)
+
+# Clean data: If user's age not in 0–120, mark as invalid
+
+
+
+user ={
+    "name":"Ravi",
+    "age":-5
+}
+if user['age']>0 and user['age']<120:
+    print(f"{user['name']}   your age is valid!!!!")
+else:
+    print(f"{user['name']}  Your age is invalid!!!!")
+
+
+
+
+
+
+#This is my homework for day 2
+#Task4:
+
+'''Ask user's name and age.
+If age < 18: print "Minor",
+elif 18–60: print "Adult",
+else: "Senior Citizen"'''
+
+user=input("Enter your name: ")
+age=int(input("Enter your age: "))
+
+if age<18:
+    print(f"{user} You are Minor")
+elif age>=18 and age<60:
+    print(f"{user} You are Adult")
+else:
+    print(f"{user} You are Senior Citizen")

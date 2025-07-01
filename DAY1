@@ -1,0 +1,43 @@
+''' Topic:
+
+input()
+
+print()
+
+type()
+
+int(), float(), str() – Type Conversion
+
+'''
+
+#Ask user’s name and print welcome message using f-string
+
+name = input("Enter your name: ")
+print(f"Welcome {name} to the world of Data Analysis")
+
+#Ask two numbers, convert to int, and print their product
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: ")) 
+product = num1 * num2
+print(f"The product of {num1} and {num2} is {product}")
+# Ask user’s age, convert to int, and print type
+age = int(input("Enter your age: "))
+print(f"Your age is {age} and its type is {type(age)}")
+# Ask user’s height in meters, convert to float, and print type
+height = float(input("Enter your height in meters: "))
+print(f"Your height is {height} meters and its type is {type(height)}") 
+# Ask user’s favorite color, convert to string, and print type
+favorite_color = input("Enter your favorite color: ")
+print(f"Your favorite color is {favorite_color} and its type is {type(favorite_color)}")
+# Ask user’s birth year, convert to int, and print age in 2025
+birth_year = int(input("Enter your birth year: "))
+current_year = 2025
+age_in_2025 = current_year - birth_year
+print(f"Your age in {current_year} is {age_in_2023} years
+
+
+#Task: Ask name of 3 friends → print welcome message
+name1 = input("Enter friend 1's name: ")
+name2 = input("Enter friend 2's name: ")
+name3 = input("Enter friend 3's name: ")
+print(f"Hello {name1}, {name2}, {name3}! Welcome to the Python Party 🎉")

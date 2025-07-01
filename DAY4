@@ -1,0 +1,70 @@
+#Loop through a list of numbers and print only the odd numbers
+listt=[1,2,34,5,6,7,8,9,11,22,33,44,55,66,77,88,99,12,34,14,14,15,15]
+for i in listt:
+    if i%2==0:
+        continue
+    else:
+        print(f"Number is odd: {i}")
+        
+#Loop through a list of dictionaries with name and age. Print only users who are adults (age >= 18)
+users=[{"name":"manish","age":29},
+{"name":"kon","age":90},
+{"name":"krish","age":34},
+{"name":"virat","age":23}
+]
+for user in users:
+    if user["age"]>=18:
+        print(f"you are adult {user["name"]} with the age of {user["age"]}")
+    else:
+        print("You are minor")
+        
+#Task3:
+names = ["Ravi", "Neha", "Amit"]
+spends = [500, 200, 1100]
+#Loop using zip() and print:
+        #Neha is a low spender
+        #Amit is a high spendor
+# Loop using zip
+for name, spend in zip(names, spends):
+    if spend > 500:
+        print(f"{name} is a high spender")
+    else:
+        print(f"{name} is a low spender")
+
+
+#Task
+my_dict={}
+i=int(input("Enter the no of product: "))
+
+for i in range(i):
+    key=input("Enter the key: ")
+    value=input("Enter the value: ")
+    
+    if value.isdigit():
+        value=int(value)
+    my_dict[key]=value
+print(my_dict)
+
+for key,value in my_dict.items():
+    if value>=18:
+        print("you are adult: ")
+    else:
+        print("You are not: ")
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

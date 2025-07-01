@@ -1,0 +1,38 @@
+#Print numbers from 1 to 10 using both for and while
+for i in range(1,11):
+    print(i)
+    
+number=1
+while number<11:
+    print(number)
+    number+=1
+    
+#TASK=2
+#Take a list of 5 numbers from user and print their squares
+
+
+listt=[]
+for i in range(1,6):
+    num=int(input(f"Enter the number {i}  "))
+    listt.append(num)
+print("Entered list by user: ", listt)
+for j in listt:
+    print(f"The square of {j} is {j**2}")
+    
+    
+    
+#TASK3:
+sales = [1200, 800, 4500, 999, 6000]
+for i in sales:
+    if i<1000:
+        print(f"{i} is LOW!!")
+        
+    else:
+        print(f"{i} is OKK!!")
+
+#TASK4
+#HOMEWORK
+#Take a number from user, print its multiplication table (1 to 10)
+num=int(input("Enter the number which you want to the multiplication table: "))
+for i in range(1,11):
+    print(f"{num} * {i} = {num*i}")

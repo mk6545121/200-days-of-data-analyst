@@ -1,0 +1,58 @@
+#Today i learn about the functions and file function
+
+def greet(name):
+    print(f"Hello {name} Welcome to the Data Party!")
+    
+greet("Manish")
+
+#file reading with loop:
+with open("file.txt/csv") as file:
+    for line in file:
+        print(line.strip())
+        
+#Create a function is_even(num) that returns True if number is even, else False
+#Use it in a loop for numbers 1 to 20
+def is_even(num):
+    if num%2==0:
+        return True
+    else:
+        return False
+        
+num=int(input("Enter the last number to end form 1: "))
+for i in range(1,num+1):
+    print(f"The numbers {i} is --> {is_even(i)}")
+
+'''Simulate a list of 10 customers with their spend.
+
+Create a function flag_customer(spend) → return "High" if > ₹500, "Low" otherwise
+
+Print: "Customer 1 - High" etc.
+
+'''
+def flag_customer(spend):
+    if spend>500:
+        return "HIGH"
+    elif spend==500:
+        return "MEDIUM"
+    else:
+        return "LOW"
+spend=[500,559,3939,3939,3389]
+count=1
+for i in spend:
+    print(f"Customer {count} {"-->"} {flag_customer(i)}")
+    count+=1
+
+'''Take 3 user inputs: name, city, spend
+Write a function analyze_user(name, city, spend) that prints:
+
+“Hello Ravi from Delhi! You spent ₹1200 — High spender!”'''
+
+def analyze_user(name,city,spend):
+    if spend>500:
+        return (f'Hello {name} from {city}! You spent Rupees {spend}--> YOU SPEND IS HIGH')
+    elif spend==500:
+         return (f'Hello {name} from {city}! You spent Rupees {spend}--> YOU SPEND IS Medium')
+    else:
+         return (f'Hello {name} from {city}! You spent Rupees {spend}--> YOU SPEND IS Low')
+
+print(analyze_user("MAnsih","delhi",980))
