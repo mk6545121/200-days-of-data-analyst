@@ -89,8 +89,6 @@ This repo contains my **daily progress** as I transform myself from a beginner i
 
 ## 🚀 Placement Loading...
 
-> “Tu SQL join seekh gaya, ab HR tujhe bhi join karegi.” 😂  
-> **Google-level DA banne ka time aa gaya bhai!**
 
 
 
